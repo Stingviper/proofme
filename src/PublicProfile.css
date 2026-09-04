@@ -1,0 +1,321 @@
+.public-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(124, 58, 237, 0.14),
+      transparent 35%
+    ),
+    #09090d;
+  color: #f4f4f5;
+}
+
+.public-nav {
+  height: 76px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #1f1f25;
+}
+
+.public-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.public-logo-icon {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: #7c3aed;
+}
+
+.public-back,
+.public-share {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 0;
+  background: transparent;
+  color: #a1a1aa;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.public-back:hover,
+.public-share:hover {
+  color: white;
+}
+
+.public-share {
+  padding: 10px 15px;
+  border: 1px solid #292930;
+  border-radius: 9px;
+}
+
+.public-main {
+  width: min(850px, 90%);
+  margin: auto;
+  padding: 55px 0 70px;
+}
+
+.public-badge {
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 12px;
+  border: 1px solid #3b2a61;
+  border-radius: 30px;
+  color: #c4b5fd;
+  background: #15101f;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.public-hero {
+  text-align: center;
+  padding: 35px 0 60px;
+}
+
+.public-avatar {
+  width: 82px;
+  height: 82px;
+  margin: auto;
+  display: grid;
+  place-items: center;
+  border-radius: 22px;
+  background: #7c3aed;
+  font-size: 30px;
+  font-weight: 700;
+  box-shadow: 0 15px 45px rgba(124, 58, 237, 0.2);
+}
+
+.public-hero h1 {
+  margin: 25px 0 10px;
+  font-size: 36px;
+  letter-spacing: -1.5px;
+}
+
+.public-hero > p {
+  max-width: 500px;
+  margin: auto;
+  color: #71717a;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.public-score {
+  width: fit-content;
+  margin: 35px auto 0;
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-align: left;
+  border: 1px solid #292930;
+  border-radius: 14px;
+  background: #111117;
+}
+
+.public-score-number {
+  font-size: 38px;
+  font-weight: 700;
+  color: #a78bfa;
+}
+
+.public-score strong,
+.public-score span {
+  display: block;
+}
+
+.public-score strong {
+  font-size: 13px;
+}
+
+.public-score span {
+  margin-top: 4px;
+  color: #71717a;
+  font-size: 11px;
+}
+
+.public-section-heading {
+  margin-bottom: 20px;
+}
+
+.public-section-heading span {
+  color: #a78bfa;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.public-section-heading h2 {
+  margin: 7px 0 0;
+  font-size: 24px;
+}
+
+.public-skill-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.public-skill-card {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  align-items: center;
+  gap: 18px;
+  padding: 20px;
+  border: 1px solid #292930;
+  border-radius: 14px;
+  background: #111117;
+}
+
+.public-skill-icon {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: #1d1630;
+  color: #a78bfa;
+}
+
+.public-skill-info h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.public-skill-info p {
+  margin: 4px 0 0;
+  color: #71717a;
+  font-size: 11px;
+}
+
+.public-skill-score {
+  text-align: right;
+}
+
+.public-skill-score strong {
+  font-size: 24px;
+}
+
+.public-skill-score span {
+  color: #71717a;
+  font-size: 11px;
+}
+
+.public-verified {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 7px 10px;
+  border-radius: 20px;
+  background: #17131f;
+  color: #a78bfa;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.public-footer {
+  margin-top: 40px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid #292930;
+  border-radius: 15px;
+  background: #111117;
+}
+
+.public-footer-icon {
+  width: 45px;
+  height: 45px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: #1d1630;
+  color: #a78bfa;
+}
+
+.public-footer h3 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.public-footer p {
+  margin: 5px 0 0;
+  color: #71717a;
+  font-size: 11px;
+}
+
+.public-footer-share {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 13px;
+  border: 1px solid #292930;
+  border-radius: 8px;
+  background: transparent;
+  color: #d4d4d8;
+  cursor: pointer;
+}
+
+.public-footer-share:hover {
+  color: white;
+  border-color: #7c3aed;
+}
+
+.public-powered {
+  margin-top: 30px;
+  text-align: center;
+  color: #52525b;
+  font-size: 11px;
+}
+
+.public-powered strong {
+  color: #71717a;
+}
+
+@media (max-width: 650px) {
+  .public-nav {
+    padding: 0 5%;
+  }
+
+  .public-main {
+    width: 92%;
+  }
+
+  .public-hero h1 {
+    font-size: 28px;
+  }
+
+  .public-skill-card {
+    grid-template-columns: auto 1fr auto;
+  }
+
+  .public-verified {
+    grid-column: 2 / -1;
+    width: fit-content;
+  }
+
+  .public-footer {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .public-footer-share {
+    margin-left: 60px;
+  }
+}

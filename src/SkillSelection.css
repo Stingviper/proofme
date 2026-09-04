@@ -1,0 +1,284 @@
+.selection-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      circle at 50% 10%,
+      rgba(124, 58, 237, 0.12),
+      transparent 35%
+    ),
+    #08080b;
+  color: #f5f5f7;
+}
+
+.selection-nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 24px 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  border: none;
+  background: transparent;
+
+  color: #71717a;
+  font-size: 14px;
+}
+
+.back-button:hover {
+  color: white;
+}
+
+.selection-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.selection-logo-icon {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+  background: linear-gradient(135deg, #8b5cf6, #6366f1);
+
+  font-size: 20px;
+}
+
+.step-indicator {
+  color: #52525b;
+  font-size: 13px;
+}
+
+.active-step {
+  color: #a78bfa;
+  font-weight: 700;
+}
+
+.selection-main {
+  max-width: 850px;
+  margin: auto;
+  padding: 90px 30px;
+}
+
+.selection-heading {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.selection-label {
+  color: #9b7cff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.selection-heading h1 {
+  margin: 15px 0;
+
+  font-size: clamp(45px, 7vw, 68px);
+  line-height: 1;
+  letter-spacing: -3px;
+}
+
+.selection-heading h1 span {
+  color: #9b7cff;
+}
+
+.selection-heading p {
+  max-width: 570px;
+  margin: auto;
+
+  color: #71717a;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.skill-card {
+  position: relative;
+
+  min-height: 150px;
+  padding: 25px;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+
+  text-align: left;
+
+  border: 1px solid #25252d;
+  border-radius: 16px;
+
+  background: #0e0e12;
+  color: white;
+
+  transition: 0.2s;
+}
+
+.skill-card:hover {
+  border-color: #51407a;
+  transform: translateY(-2px);
+}
+
+.skill-card.selected {
+  border-color: #8b5cf6;
+  background: rgba(139, 92, 246, 0.08);
+  box-shadow: 0 0 30px rgba(139, 92, 246, 0.08);
+}
+
+.skill-icon {
+  width: 48px;
+  height: 48px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  color: #a78bfa;
+  background: rgba(139, 92, 246, 0.12);
+}
+
+.skill-info h3 {
+  margin: 2px 0 7px;
+
+  font-size: 17px;
+}
+
+.skill-info p {
+  margin: 0;
+
+  color: #71717a;
+  font-size: 12px;
+}
+
+.selection-circle {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+
+  width: 19px;
+  height: 19px;
+
+  border: 1px solid #3f3f46;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-card.selected .selection-circle {
+  border-color: #9b7cff;
+}
+
+.selection-circle div {
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+  background: #9b7cff;
+}
+
+.selection-footer {
+  margin-top: 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.selection-footer p {
+  margin: 0;
+
+  color: #52525b;
+  font-size: 12px;
+}
+
+.continue-button {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 13px 20px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #27272f;
+  color: #52525b;
+
+  font-weight: 600;
+}
+
+.continue-button.enabled {
+  background: linear-gradient(135deg, #8b5cf6, #6d5dfc);
+  color: white;
+  box-shadow: 0 10px 30px rgba(124, 92, 246, 0.2);
+}
+
+@media (max-width: 650px) {
+  .skill-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .selection-main {
+    padding-top: 55px;
+  }
+
+  .selection-footer {
+    flex-direction: column;
+    gap: 20px;
+    align-items: stretch;
+  }
+
+  .continue-button {
+    justify-content: center;
+  }
+}
+.coding-badge {
+  padding: 6px 9px;
+  border-radius: 999px;
+  background: #111827;
+  color: white;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+}
+
+.skill-card {
+  text-align: left;
+}
+
+.skill-card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+  color: #111827;
+  font-size: 13px;
+  font-weight: 700;
+}
